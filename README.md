@@ -60,6 +60,8 @@ For that, follow these steps:
 - Save the [package.json file](package.json) and go to your terminal.
 - Type `npm run dev -- -p 3002` in your terminal. Now, the server will run on port 3002.
 
+Test it locally before pushing the code.
+
 <!-- ## Team
 
 1. Eduardo Vedes (eduardo.vedes@gmail.com)
