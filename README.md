@@ -39,15 +39,15 @@ Numbers one to nine spelled out. Use numerals for 10 and above.
 
 The website is a Next.js app. It automatically deploys to Vercel when the master branch is updated.
 
-## How you can run it on your local machine
+## How to run the development environment
 
 - Clone the Repo.
 - Run:
   ```
-  npm install
+  yarn install
   npm run dev
   ```
-  It will run on the [port 3000](http://localhost:3005) of your local machine, by default.
+  It will run on the [port 3000](http://localhost:3000) of your local machine, by default.
 
 If you're umable to run it on Port 3000 due to any reason, you can run it on any other port.
 
