@@ -23,7 +23,7 @@ If you want to participate as a developer:
 
 2. create a feature branch
 
-3. create a PR to our `develop` branch with detailed and well documented descriptions about what your're doing (feature / enhancement / bug fix).
+3. create a PR to merge your contributions on our `develop` branch with detailed and well documented descriptions about what your're doing (feature / enhancement / bug fix). Do not create a Pull Request to our `master` branch.
 
 ## Style guide
 
@@ -41,13 +41,15 @@ The website is a Next.js app. It automatically deploys to Vercel when the master
 
 ## How to run the development environment
 
-- Clone the Repo.
+- Fork the [iamfreeCodeCamp Repo](https://github.com/iamfreeCodeCamp/iamfreecodecamp)
+- Clone the Repo to your your local machine to start contributing.
+- Create your own `feature branch` to push your changes to. Do not push your code to the `master` or any other branches other than your own feature branch.
 - Run:
   ```
   yarn install
-  npm run dev
+  yarn dev
   ```
-  It will run on the [port 3000](http://localhost:3000) of your local machine, by default.
+  The development environment will run on [Port 3000](http://localhost:3000) of your local machine, by default.
 
 If you're umable to run it on Port 3000 due to any reason, you can run it on any other port.
 
