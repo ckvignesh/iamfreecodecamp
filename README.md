@@ -1,5 +1,5 @@
 # Welcome to #iamfreeCodeCamp
-
+***
 ## What is #iamfreeCodeCamp?
 
 **#iamfreeCodeCamp** is a movement to raise awareness for the Open Source Community.
@@ -13,18 +13,69 @@ It's built around the freeCodeCamp community and presented as a challenge with t
 
 **🔥 #iamfreeCodeCamp** project is non-commercial, open source and with educational purposes.
 
+***
 ## How to contribute?
 
 If you have any suggestion please raise an issue in our repo.
 
 If you want to participate as a developer:
 
-1. create a fork from iamfreecodecamp repo
+1. create a fork from iamfreecodecamp repo.
+   
+   ![](./public/assets/instructions/fork.png)
 
-2. create a feature branch
+2. clone the repo that was forked.
+   
+   ![](./public/assets/instructions/clone.png)
 
-3. create a PR to merge your contributions on our `develop` branch with detailed and well documented descriptions about what your're doing (feature / enhancement / bug fix). Do not create a Pull Request to our `master` branch.
+   Enter this in terminal: 
+   `git clone https://github.com/iamfreeCodeCamp/iamfreecodecamp.git`
 
+3. create a feature branch after cloning the repo. Open the repo from the code editor (Preferably VS Code). Create a `my-feature-branch` by entering this into the terminal. This is the branch where contributions can be made.
+   
+    `git checkout -b my-feature-branch`
+
+4. run the Development Environment on the local machine by entering these commands into the terminal
+      ```
+      yarn install
+      yarn dev
+      ```
+    the development environment will run on your local machine's [Port 3000](http://localhost:3000) by default.
+
+5. contribute code and test it in the development environment.
+    
+6. after working on the feature branch it must be staged, committed and pushed to the remote i.e. your Repo that was cloned from `iamfreecodecamp`. Enter these commands into the terminal:
+      ```
+      git add .
+      git commit -m "feat: my commit message"
+      git push origin my-feature-branch
+      ```
+
+7. create a Pull Request to merge your contributions to the iamfreeCodeCamp Repo. Go to the iamfreeCodeCamp Repo and click `pull requests` 
+   
+   ![](./public/assets/instructions/PR1.png)
+
+   Click on `compare across forks`
+   ![](./public/assets/instructions/compareForks.png)
+
+8. submit the pull request to our `develop` branch. Do not create a Pull Request to our `master` branch.
+
+   To achieve this, set the `Comparing Changes` as follows:
+   ![](./public/assets/instructions/compareForksPRset.png)
+
+   ```
+   base repository: iamfreeCodeCamp Repo
+   base: develop
+   head repository: your Forked Repo
+   base: my-feature-branch
+   ```
+   You can see `Able to merge` in green which confirms that you can raise a PR.
+
+9. scroll below and click on `Create Pull Request` after giving a detailed and well documented description about what your're doing (it maybe a feature / enhancement / bug fix). Keep the `Allow edits by maintainers` checked.
+ 
+    ![](./public/assets/instructions/submitPR.png)
+
+***
 ## Style guide
 
 How to write on our site
@@ -35,51 +86,28 @@ alumni, alumnus - lower case.
 N
 Numbers one to nine spelled out. Use numerals for 10 and above.
 
+***
 ## Website
 
 The website is a Next.js app. It automatically deploys to Vercel when the master branch is updated.
 
-## How to run the development environment
-
-- Fork the [iamfreeCodeCamp Repo](https://github.com/iamfreeCodeCamp/iamfreecodecamp)
-- Clone the Repo to your your local machine to start contributing.
-- Create your own `feature branch` to push your changes to. Do not push your code to the `master` or any other branches other than your own feature branch.
-- Run:
-  ```
-  yarn install
-  yarn dev
-  ```
-  The development environment will run on [Port 3000](http://localhost:3000) of your local machine, by default.
-
-If you're umable to run it on Port 3000 due to any reason, you can run it on any other port.
-
-For that, follow these steps:
-
-- Go to the [package.json file](package.json).
-- You'll see this line of code `"dev": "next"`.
-- Replace `"next"` with `"next dev -p 3002"`. `3002` is the port you may want to use. You can use any number here but, remember to use it for the next steps in place of `3002`.
-- It should look like this, now: `"dev": next dev -p 3002"`.
-- Save the [package.json file](package.json) and go to your terminal.
-- Type `npm run dev -- -p 3002` in your terminal. Now, the server will run on port 3002.
-
-Test it locally before pushing the code.
-
-<!-- ## Team
-
-1. Eduardo Vedes (eduardo.vedes@gmail.com)
-2. Can Ural (can.ural@outlook.com) -->
-
+***
 ## Mentors
 
 1. Eduardo Vedes (eduardo.vedes@gmail.com)
 2. Can Ural (can.ural@outlook.com)
 
-## Students
+***
+
+<!-- ## Students
 
 1.
-
+2. 
+*** -->
 ## Contributors
 
+
+***
 ## Sponsors
 
 Powered By
@@ -87,3 +115,12 @@ Powered By
 <a href="https://vercel.com?utm_source=iamfreecodecamp&utm_campaign=oss">
 <img src="./public/assets/vercel/logo.svg" alt="logo">
 </a>
+
+***
+## FAQ
+
+### 1. I am unable to run the development environment on PORT 3000 as there's something else running 
+
+Refer to Step 4 of [How to contribute?](#how-to-contribute)
+
+Run `PORT=3005 yarn dev` instead of `yarn dev`. You can use any other port number you wish to, instead of 3005. 
