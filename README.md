@@ -29,52 +29,67 @@ If you want to participate as a developer:
    ![](./public/assets/instructions/clone.png)
 
    Enter this in terminal: 
-   `git clone https://github.com/iamfreeCodeCamp/iamfreecodecamp.git`
+   `git clone https://github.com/<yourUserName>/iamfreecodecamp.git`
 
-3. create a feature branch after cloning the repo. Open the repo from the code editor (Preferably VS Code). Create a `my-feature-branch` by entering this into the terminal. This is the branch where contributions can be made.
+3. set the upstream for your repo by entering this into the terminal
+   
+   `git remote add upstream https://github.com/iamfreeCodeCamp/iamfreecodecamp.git`
+
+4. create a feature branch after cloning the repo. To do this, open the repo from the code editor (Preferably VS Code). Create a `my-feature-branch` by entering this into the terminal. This is the branch where contributions can be made.
    
     `git checkout -b my-feature-branch`
 
-4. run the Development Environment on the local machine by entering these commands into the terminal
+5. run the Development Environment on the local machine by entering these commands into the terminal
       ```
       yarn install
       yarn dev
       ```
     the development environment will run on your local machine's [Port 3000](http://localhost:3000) by default.
 
-5. contribute code and test it in the development environment.
+6. contribute code and test it in the development environment.
     
-6. after working on the feature branch it must be staged, committed and pushed to the remote i.e. your Repo that was cloned from `iamfreecodecamp`. Enter these commands into the terminal:
+7. after working on the feature branch it must be staged, committed and pushed to the remote i.e. your Repo that was cloned from `iamfreecodecamp`. Enter these commands into the terminal:
       ```
       git add .
       git commit -m "feat: my commit message"
       git push origin my-feature-branch
       ```
 
-7. create a Pull Request to merge your contributions to the iamfreeCodeCamp Repo. Go to the iamfreeCodeCamp Repo and click `pull requests` 
+8. create a Pull Request to merge your contributions to the iamfreeCodeCamp Repo. Go to the iamfreeCodeCamp Repo and click `pull requests` 
    
    ![](./public/assets/instructions/PR1.png)
 
    Click on `compare across forks`
    ![](./public/assets/instructions/compareForks.png)
 
-8. submit the pull request to our `develop` branch. Do not create a Pull Request to our `master` branch.
+9.  submit the pull request to our `develop` branch. Do not create a Pull Request to our `master` branch.
 
-   To achieve this, set the `Comparing Changes` as follows:
+      To achieve this, set the `Comparing Changes` as follows:
    ![](./public/assets/instructions/compareForksPRset.png)
 
-   ```
-   base repository: iamfreeCodeCamp Repo
-   base: develop
-   head repository: your Forked Repo
-   base: my-feature-branch
-   ```
-   You can see `Able to merge` in green which confirms that you can raise a PR.
+      ```
+      base repository: iamfreeCodeCamp Repo
+      base: develop
+      head repository: your Forked Repo
+      base: my-feature-branch
+      ```
+      You can see `Able to merge` in green. This confirms that you can raise a PR.
 
-9. scroll below and click on `Create Pull Request` after giving a detailed and well documented description about what your're doing (it maybe a feature / enhancement / bug fix). Keep the `Allow edits by maintainers` checked.
+10. scroll below and click on `Create Pull Request` after giving a detailed and well documented description about what your're doing (it maybe a feature / enhancement / bug fix). Keep the `Allow edits by maintainers` checked.
  
-    ![](./public/assets/instructions/submitPR.png)
+      ![](./public/assets/instructions/submitPR.png)
 
+11.  work on suggestions that may be given by the Repo Maintainer(s) as comments under the Pull Requests. You need not create a new Pull Request once it's done. Pushing the code to remote would do the job. You must request for a review, by clicking the button shown. 
+    
+      ![](./public/assets/instructions/requestReview.png)
+    
+12. congrats! the Maintainer(s) will review your code, approve the changes in the Pull Request and merge it.
+    
+13. feel free to contribute more to our Open Source repo by raising an issue. Before you start working on the next PR, run these commands on your terminal to update the local repo with updates from iamfreeCodeCamp (upstream).
+   ```
+   git fetch upstream
+   git pull upstream/master
+   ```
 ***
 ## Style guide
 
