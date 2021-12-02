@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { About, Challenges, Mentors, Tldr } from '../sections' // add Team here while adding it later
+import { About, Challenges, Mentors, Tldr } from '../sections' // add Team here while adding it later. also add the team files to Sections folder.
 import { HeaderImage, Layout } from '../components'
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
       <About />
       <Challenges />
       <Mentors />
-      {/* <Team /> */}
+      {/* add team info here */}
     </Layout>
   )
 }
